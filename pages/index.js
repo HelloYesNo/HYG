@@ -10,14 +10,14 @@ export default function Home() {
           <link rel='icon' href='/favicon.ico' />
         </Head>
         <main>
-          <div className='fixed inset-0 justify-center text-6xl grid grid-cols-2 gap-2 text-center place-items-center'>
+          <div className='fixed inset-0 justify-center text-6xl grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2 gap-2 text-center place-items-center'>
             <Link href='/photos' passHref>
-              <div className='p-5 border-current dark:bg-zinc-900 hover:shadow-np-light hover:dark:shadow-np-dark ease-in duration-500 rounded-3xl w-4/5 h-4/5 grid place-items-center cursor-pointer select-none text-shadow-np-light dark:text-shadow-np-dark hover:dark:text-light hover:text-zinc-600'>
+              <div className='p-5 border-current dark:bg-zinc-900 hover:shadow-np-light hover:dark:shadow-np-dark ease-in duration-500 rounded-3xl lg:w-4/5 md:w-11/12 h-4/5 grid place-items-center cursor-pointer select-none text-shadow-np-light dark:text-shadow-np-dark hover:dark:text-light hover:text-zinc-600'>
                 <h1>Photos</h1>
               </div>
             </Link>
             <Link href='/music' passHref>
-              <div className='p-5 border-current dark:bg-zinc-900 hover:shadow-np-light hover:dark:shadow-np-dark ease-in duration-500 rounded-3xl w-4/5 h-4/5 grid place-items-center cursor-pointer select-none text-shadow-np-light dark:text-shadow-np-dark hover:dark:text-light hover:text-zinc-600'>
+              <div className='p-5 border-current dark:bg-zinc-900 hover:shadow-np-light hover:dark:shadow-np-dark ease-in duration-500 rounded-3xl lg:w-4/5 md:w-11/12 h-4/5 grid place-items-center cursor-pointer select-none text-shadow-np-light dark:text-shadow-np-dark hover:dark:text-light hover:text-zinc-600'>
                 <h1>Music</h1>
               </div>
             </Link>
