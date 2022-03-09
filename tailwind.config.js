@@ -15,8 +15,8 @@ module.exports = {
         'light': '#E7E7E4',
       },
       textShadow: {
-        'np-dark': '2px 2px 2px #1b1b1e, -2px -2px 2px #151518',
-        'np-light': '1px 1px 2px #ffffff, -1px -1px 2px #c4c4c2',  
+        'np-dark': '2px 2px 2px #202024, -2px -2px 2px #101012',
+        'np-light': '1px 1px 2px #ffffff, -1px -2px 2px #bfbfbd',  
       }
     },
   },
