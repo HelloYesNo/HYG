@@ -1,19 +1,19 @@
 import Head from 'next/head';
+import HomePageCard from '../components/HomePageCard';
 
 export default function Home() {
   return (
-    <html className='bg-white dark:bg-zinc-900 dark:text-white'>
-      <div>
-        <Head>
-          <title>Home</title>
-          <link rel='icon' href='/favicon.ico' />
-        </Head>
-        <main>
-          <div className='fixed inset-0 flex items-center justify-center text-3xl'>
-            <h1>Home</h1>
-          </div>
-        </main>
-      </div>
-    </html>
+    <div>
+      <Head>
+        <title>Home</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <main>
+        <div className='fixed inset-0 justify-center grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-cols-1 sm:grid-rows-2 gap-2 text-center place-items-center'>
+          <HomePageCard link='/photos'>Photos</HomePageCard>
+          <HomePageCard link='/music'>Music</HomePageCard>
+        </div>
+      </main>
+    </div>
   );
 }

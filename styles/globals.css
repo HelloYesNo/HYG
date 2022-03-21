@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  background-color: #0f172a;
-} */
+@layer base {
+  html {
+    @apply dark:bg-zinc-900 dark:text-zinc-900 bg-light text-light;
+  }
+
+  h1 {
+    @apply text-6xl;
+  }
+}
