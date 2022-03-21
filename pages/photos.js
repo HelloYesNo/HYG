@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import PageDev from '../components/PageDev';
 import img1 from '../public/001010790001.jpg';
 import img2 from '../public/001010790002.jpg';
 import img3 from '../public/001010790003.jpg';
@@ -16,8 +17,9 @@ export default function Photos() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main>
-        <div className='grid grid-cols-4 auto-rows-max gap-2'>
-          <div>
+        <div className='relative'>
+          <PageDev />
+          <div className='grid grid-cols-3'>
             {[
               [img1, 'alt1', 1],
               [img2, 'alt2', 2],
@@ -27,7 +29,13 @@ export default function Photos() {
               [img6, 'alt6', 6],
               [img7, 'alt7', 7],
             ].map(([image, alt, key]) => (
-              <Image src={image} alt={alt} key={key} />
+              <Image
+                layout='responsive'
+                src={image}
+                alt={alt}
+                key={key}
+                className='object-contain w-14 h-14'
+              />
             ))}
           </div>
         </div>
